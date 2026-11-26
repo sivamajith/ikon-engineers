@@ -1,9 +1,9 @@
 export const CO = {
   name: 'IKON Engineers',
-  address: '4/134, Shanmuganagar,\nPadappai, Kanchipuram,\nTamil Nadu - 601\u00a0301',
+  address: 'NO415, ZION NAGAR,VANCHUVANCHERY,\nPADAPAI, KANCHIPURAM DIST,\nTAMIL NADU - 601\u00a0301',
   phone: '9500492280', email: 'ikonengineers1@gmail.com', gst: '33BEKPA5596Q1ZV',
 }
-export const NAV = [['about', 'About'], ['services', 'Services'], ['projects', 'Projects'], ['clients', 'Clients'], ['contact', 'Contact']]
+export const NAV = [['about', 'About'], ['services', 'Services'], ['clients', 'Clients'], ['contact', 'Contact']]
 const safe = 'Executed with proper safety measures using suitable tools and tackles, as per standards.'
 export const SERVICES = [
   { t: 'Structural works', wide: true, imgs: ['struct1', 'struct2', 'struct3', 'struct4', 'struct5'],
@@ -17,14 +17,6 @@ export const SERVICES = [
   { t: 'Machinery erections', d: 'Erection of all kinds of machinery. ' + safe },
   { t: 'Spot welding gun and rails installations', d: 'Installation of spot welding guns and rails. ' + safe },
   { t: 'Manpower supply', d: 'Supply of manpower for all kinds of mechanical and electrical work.' },
-]
-export const PROJECTS = [
-  { c: 'Durr India', p: 'Paint booth 1 & 2, oven 1 & 2 and accessories: installation and commissioning', d: 'June 2025 to August 2025', s: 'Satrac Engineering Private Limited', v: 2532260 },
-  { c: 'Opel Energy Systems', p: 'Paint shop #2 RTO waste heat recovery system: complete fabrication, erection and commissioning', d: 'October 2024 to January 2025', s: 'Hyundai Motor India Limited', v: 2050000 },
-  { c: 'Trinity Coating', p: 'Paint shop #1 topcoat robot base and piping work', d: 'April 2025', s: 'Toyota Kirloskar Motor Pvt Ltd', v: 950000 },
-  { c: 'Innovative Engineering', p: 'Body shop line 01: body side jig, robot and accessories installation and commissioning', d: 'June 2025', s: 'Renault Nissan Automotive India Pvt Ltd', v: 770000 },
-  { c: 'Obara India', p: 'Body shop line 01: spot welding gun, transformer and accessories installation', d: 'March 2025', s: 'Renault Nissan Automotive India Pvt Ltd', v: 557000 },
-  { c: 'thyssenkrupp', p: 'Body shop line 01: jigs and accessories modification and installation', d: 'June 2025', s: 'Renault Nissan Automotive India Pvt Ltd', v: 534175 },
 ]
 export const CLIENTS = [['durr', 'Durr'], ['hero', 'Hero'], ['satrac', 'Satrac Kyokuto'], ['trinity', 'Trinity Coating Systems'], ['rihting', 'Rihting'],
   ['thyssenkrupp', 'thyssenkrupp'], ['obara', 'Obara'], ['hitachi', 'Hitachi'], ['innovative', 'Innovative Engineering Services'], ['opel', 'Opel Energy Systems']]

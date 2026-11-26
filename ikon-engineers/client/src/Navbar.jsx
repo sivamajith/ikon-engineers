@@ -12,7 +12,7 @@ export default function Navbar() {
       setIsScrolled(window.scrollY > 25)
 
       // Section spy for highlighting current section
-      const sections = ['contact', 'clients', 'projects', 'services', 'about']
+      const sections = ['contact', 'clients', 'services', 'about']
       const scrollPos = window.scrollY + 220
       let found = ''
       for (const id of sections) {

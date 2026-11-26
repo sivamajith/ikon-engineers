@@ -1,9 +1,8 @@
 import { useState } from 'react'
 import Scene from './Scene.jsx'
 import Navbar from './Navbar.jsx'
-import { CO, SERVICES, PROJECTS, CLIENTS } from './data.js'
+import { CO, SERVICES, CLIENTS } from './data.js'
 
-const inr = (n) => new Intl.NumberFormat('en-IN', { style: 'currency', currency: 'INR', maximumFractionDigits: 0 }).format(n)
 const Grid = ({ c, className = '', children }) => (
   <div className={'grid ' + className} style={{ '--xs': c[0], '--sm': c[1], '--md': c[2], '--lg': c[3] }}>{children}</div>
 )
@@ -51,10 +50,10 @@ export default function App() {
 
       <main id="top">
         <section className="hero"><div className="wrap">
-          <h1>Erection and commissioning for automotive plants</h1>
+          <h1>Mechanical Fabrication  Installation & Commissioning</h1>
           <p>Customized solutions backed by high-level service and after-sale technical support. Serving industry since 2018 from Padappai, Chennai.</p>
           <div className="hero-actions">
-            <a className="btn g" href="#projects">See our projects</a>
+            <a className="btn g" href="#services">Explore our services</a>
             <p className="spec">Paint shops, body shops, piping, conveyors, structural steel</p>
           </div>
         </div></section>
@@ -80,17 +79,6 @@ export default function App() {
               <article key={x.t} className={'card' + (x.wide ? ' wide' : '')}>
                 {x.imgs && <div className={'pics n' + x.imgs.length}>{x.imgs.map((i) => <img key={i} src={`/img/${i}.jpg`} alt={x.t} loading="lazy" />)}</div>}
                 <h3>{x.t}</h3><p>{x.d}</p>
-              </article>))}
-          </Grid>
-        </div></section>
-
-        <section className="sec" id="projects"><div className="wrap">
-          <Title>Recently completed projects</Title>
-          <Grid c={[1, 1, 2, 3]}>
-            {PROJECTS.map((x) => (
-              <article key={x.p} className="card proj">
-                <h3>{x.c}</h3><p>{x.p}</p>
-                <dl><dt>Duration</dt><dd>{x.d}</dd><dt>Site</dt><dd>{x.s}</dd><dt>Project value</dt><dd className="val">{inr(x.v)}</dd></dl>
               </article>))}
           </Grid>
         </div></section>
