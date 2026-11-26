@@ -16,7 +16,11 @@ app.use(helmet({ contentSecurityPolicy: { directives: {
   defaultSrc: ["'self'"], scriptSrc: ["'self'"], connectSrc: ["'self'"], imgSrc: ["'self'", 'data:'],
   styleSrc: ["'self'", "'unsafe-inline'", 'https://fonts.googleapis.com'], fontSrc: ['https://fonts.gstatic.com'],
   upgradeInsecureRequests: null } } }))
-app.use(cors({ origin: (process.env.CLIENT_ORIGIN || '').split(',').filter(Boolean) }))
+const clientOrigins = (process.env.CLIENT_ORIGIN || 'https://ikon-engineers-7li5.vercel.app')
+  .split(',')
+  .map((origin) => origin.trim().replace(/\/+$/, ''))
+  .filter(Boolean)
+app.use(cors({ origin: clientOrigins }))
 app.use(express.json({ limit: '20kb' }))
 
 const Enquiry = mongoose.model('Enquiry', new mongoose.Schema({
